@@ -20,17 +20,14 @@ public class Exception_Register extends RuntimeException {
 		// TODO Auto-generated constructor stub
 	}
 
-
-
 	/**
 	 * @param message 抛出异常的信息
 	 * @param cause   抛出异常的根本原因
 	 */
 	public Exception_Register(String message, Throwable cause) {
-		super(message, cause);
 		// TODO Auto-generated constructor stub
+		super(message, cause);
 	}
-
 
 
 	public Exception_Register() {

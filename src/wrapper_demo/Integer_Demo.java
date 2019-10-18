@@ -34,6 +34,7 @@ public class Integer_Demo {
 		  * Cmccedu110&a
 		  * */
 		 int n2=integer2;
+		 //测试包装类的缓存操作
 		 System.out.println(n2);//12
 		 Integer i1=new Integer(123);
 		 Integer i2=new Integer(123);
@@ -44,6 +45,8 @@ public class Integer_Demo {
 		 Integer i5=Integer.valueOf(256);
 		 Integer i6=Integer.valueOf(256);
 		 System.out.println(i5==i6);//false
+		 //测试parseInt
+		 Integer.parseInt("222");
 		 
 		 
 	}
