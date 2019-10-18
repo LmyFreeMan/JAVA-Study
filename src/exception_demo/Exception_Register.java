@@ -26,7 +26,7 @@ public class Exception_Register extends RuntimeException {
 	 */
 	public Exception_Register(String message, Throwable cause) {
 		// TODO Auto-generated constructor stub
-		super(message, cause); 
+		super(message, cause);
 	}
 
 
