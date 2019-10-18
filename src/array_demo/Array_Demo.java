@@ -24,7 +24,7 @@ public class Array_Demo {
 		
 		//将一个数组转换成String,用于打印
 		System.out.println(ArrayUtils.toString(dest));
-		//判断两个数组是否相等  
+		//判断两个数组是否相等
       	System.out.println(ArrayUtils.isEquals(src, dest));
 		System.out.println(ArrayUtils.isSameLength(src, dest));
 		//判断两个数组是否相等 
