@@ -45,7 +45,7 @@ public class Integer_Demo {
 		 Integer i5=Integer.valueOf(256);
 		 Integer i6=Integer.valueOf(256);
 		 System.out.println(i5==i6);//false
-		 //测试parseInt
+		 //测试parseInt 
 		 Integer.parseInt("222");
 		 
 		 
