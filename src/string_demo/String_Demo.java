@@ -4,6 +4,9 @@ public class String_Demo {
         String a="abc";
         String b="e";
         int c=0;
+        String greeting="greeting";
+        System.out.println(greeting.substring(0,3)+"p!");
+        System.out.println(greeting.codePointAt(5));
         System.out.println("这是一条华丽的分割线");
         a.concat(b);
         System.out.println(a);
