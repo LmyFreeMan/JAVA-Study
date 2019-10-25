@@ -1,8 +1,8 @@
 package array_demo;
 
-import java.util.Arrays;
-
 import org.apache.commons.lang.ArrayUtils;
+
+import java.util.Arrays;
 
 public class Array_Demo {
 
@@ -11,12 +11,18 @@ public class Array_Demo {
 	}
     public static void main(String[] args) {
     	//arraycopy将指定源数组中的数组从指定位置复制到目标数组的指定位置
+		int[] name= new int[] {1,3,5,7};
+		System.out.println(Arrays.toString(name));
 		int[] src= {1,2,3,4};
 		int[] dest= {4,5,6,7};
 		System.arraycopy(src, 0, dest, 0, 4);
+		System.out.println("这是一条华丽的分割线");
+		System.out.println("这是一条华丽的分割线");
+		System.out.println("这是一条华丽的分割线");
 		for (int i : dest) {
 			System.out.println(i);//
 		}
+		System.out.println(Arrays.toString(dest));
 		//arraycopy复制指定的数组
 		
 		int[] copy=Arrays.copyOf(src, 4);
