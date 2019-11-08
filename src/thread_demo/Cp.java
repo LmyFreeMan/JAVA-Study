@@ -67,10 +67,11 @@ class Share{
                 }
                 //生成开始
                 this.name=name;
-                this.gender=gender;
+                this.gender = gender;
                 //生成结束
                 isEmpty=false;
                 this.notify();
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -103,7 +104,7 @@ class Share{
             //消费开始
             System.out.println(this.name+"-"+this.gender);
             //消费结束
-            isEmpty=true;
+            this.isEmpty = true;
             this.notify();
         } catch (InterruptedException e) {
             e.printStackTrace();
