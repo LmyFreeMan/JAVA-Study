@@ -1,11 +1,8 @@
 package array_demo;
 
 import org.apache.commons.lang.ArrayUtils;
-
 import java.util.Arrays;
-
 public class Array_Demo {
-
 	public Array_Demo() {
 		// TODO Auto-generated constructor stub
 	}
@@ -24,10 +21,8 @@ public class Array_Demo {
 		}
 		System.out.println(Arrays.toString(dest));
 		//arraycopy复制指定的数组
-		
 		int[] copy=Arrays.copyOf(src, 4);
 		System.out.println(ArrayUtils.toString(copy));
-		
 		//将一个数组转换成String,用于打印
 		System.out.println(ArrayUtils.toString(dest));
 		//判断两个数组是否相等
