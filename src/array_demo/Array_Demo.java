@@ -1,5 +1,4 @@
 package array_demo;
-
 import org.apache.commons.lang.ArrayUtils;
 import java.util.Arrays;
 public class Array_Demo {
