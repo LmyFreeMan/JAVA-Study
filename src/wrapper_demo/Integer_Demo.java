@@ -1,11 +1,8 @@
 package wrapper_demo;
-
 public class Integer_Demo {
-
 	public Integer_Demo() {
 		// TODO Auto-generated constructor stub
 	}
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
@@ -13,10 +10,9 @@ public class Integer_Demo {
 		 * */
 		 //方式一:
 		Integer integer=Integer.valueOf(17);
-		
 		/*
 		 * 拆箱操作：把一个包装类对象转化为基本数据类型
-		 * 
+		 *
 		 * */
 		int n=integer.intValue();
 		 System.out.println(n);//17
@@ -28,7 +24,6 @@ public class Integer_Demo {
 		 System.out.println(integer.toBinaryString(9999));
 		 //转化为八进制数
 		 System.out.println(integer.toOctalString(555));
-	
 		 /*
 		  * 自从拆箱:把一个包装类对象直接转化为基本数据类型
 		  * Cmccedu110&a
@@ -47,8 +42,5 @@ public class Integer_Demo {
 		 System.out.println(i5==i6);//false
 		 //测试parseInt
 		 Integer.parseInt("222");
-		 
-		 
 	}
-
 }
