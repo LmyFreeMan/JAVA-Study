@@ -4,7 +4,8 @@ public class PlayList {
     private static   Integer[] players=null;
     //用来表示场上球员的个数
     private static  Integer size=0;
-    //设置容量为5，
+
+    //设置容量为5
     public static void init(int initialCapacit){
         if(initialCapacit<0){
             throw  new IllegalArgumentException("非法参数异常");
