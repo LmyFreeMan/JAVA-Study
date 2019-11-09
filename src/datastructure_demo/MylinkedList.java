@@ -1,11 +1,9 @@
 package datastructure_demo;
-
 public class MylinkedList {
     //链表中的每一个节点
     private Node first;//链表中的第一个节点
     private Node last; //链表中的最后一个节点
     private int size; //节点的数量
-
     public static void main(String[] args) {
         MylinkedList list = new MylinkedList();
         list.addLast("D");
@@ -16,7 +14,6 @@ public class MylinkedList {
         list.remove("A");
         System.out.println(list);
     }
-
     private Node Search(Object ele) {
         Node current = this.first;
         for (int i = 0; i < size; i++) {
@@ -29,7 +26,6 @@ public class MylinkedList {
         }
         return current;
     }
-
     private void remove(Object ele) {
         //找到被删除的节点
         Node current = this.first;
@@ -57,7 +53,6 @@ public class MylinkedList {
         }
         size--;
     }
-
     private void addFirst(String ele) {
         Node node = new Node(ele);
         if (size == 0) {
@@ -73,7 +68,6 @@ public class MylinkedList {
         }
         size++;
     }
-
     private void addLast(Object ele) {
         Node node = new Node(ele);
         if (size == 0) {
@@ -89,7 +83,6 @@ public class MylinkedList {
         }
         size++;
     }
-
     @Override
     public String toString() {
         if (size == 0) {
@@ -108,12 +101,10 @@ public class MylinkedList {
         }
         return stringBuilder.toString();
     }
-
     class Node {
         Node prev;//上一个节点对象
         Node next;//下一个节点对象
         Object ele;//当前节点中存储中的数据
-
         public Node(Object ele) {
             this.ele = ele;
         }
