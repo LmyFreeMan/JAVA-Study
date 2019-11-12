@@ -1,9 +1,7 @@
 package arraylist_demo;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
 public class ArrayList_Demo {
     public static void main(String[] args) {
         List list = new ArrayList();
