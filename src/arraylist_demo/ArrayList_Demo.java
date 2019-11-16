@@ -23,6 +23,7 @@ public class ArrayList_Demo {
             System.out.println(it2.next());
         //删除元素
         list.remove("B");
+        list.set(1, "D");
         System.out.println(list);
     }
 }
