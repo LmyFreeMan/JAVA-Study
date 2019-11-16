@@ -1,37 +1,44 @@
 package bean_demo;
 
-import java.time.LocalDate;
+public class Person {
 
-public abstract class Person
-{
-    public abstract String getDescription();
     private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     @Override
     public String toString() {
-        return getClass().getName()+"Person{" +
+        return "Person{" +
                 "name='" + name + '\'' +
+                ", age=" + age +
                 '}';
     }
 
-    public Person(String name) {
-        this.name = name;
+    public int compartTo(Person other) {
+        if (this.age > other.age) {
+            return 1;
+        } else if (this.age < other.age)
+            return -1;
+        else return 0;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public static void main(String[] args) {
-        Person[] people = new Person[2];
-        LocalDate today = LocalDate.now();
-        // fill the people array with Student and Employee objects
-        people[0]=new Employee("Harry Hacker", 50000,today);
-        people[1]=new Student("Maria Morris", "computer science");
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        // print out names and descriptions of all Person objects
-        for (Person p : people)
-            System.out.println(p.getName() + ", " + p.getDescription());
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
